@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Mood Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+        <h1>Fake Mood Scanner</h1>
+
+        <button id="scanBtn">Start Mood Scan</button>
+
+        <div id="fakeCameraPopup" class="hidden">
+            <p>Accessing your camera...</p>
+        </div>
+
+        <div id="scanSection" class="hidden">
+            <p>Scanning...</p>
+            <div id="progressBar"></div>
+        </div>
+
+        <div id="resultSection" class="hidden">
+            <h2 id="moodResult"></h2>
+            <canvas id="pieChart" width="200" height="200"></canvas>
+            <h3>Mood History</h3>
+            <ul id="historyList"></ul>
+            <button id="clearHistory">Clear History</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
