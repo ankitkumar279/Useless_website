@@ -10,12 +10,12 @@ let pieChart = document.getElementById("pieChart");
 
 let moods = [
     "You are 90% confused.",
-    "Your vibe today: chaotic.",
+    "Your vibe today: no good.",
     "You are 70% hungry.",
-    "Your brain is loading... please wait.",
-    "You look lost but in a cute way.",
-    "Your energy: ERROR 404 not found.",
-    "You are 100% done with life today."
+    "Your brain is loading... please wait haha.",
+    "You look lost but in a cute face today",
+    "Your energy: ERROR 404 not found",
+    "You are 100% done with life today"
 ];
 
 function showHistory() {
@@ -30,7 +30,7 @@ function showHistory() {
 
 scanBtn.onclick = function() {
     fakePopup.classList.remove("hidden");
-    fakePopup.textContent = "Accessing your camera...";
+    fakePopup.textContent = "Accessing your camera... wait";
 
     setTimeout(function() {
         fakePopup.textContent = "Just kidding! haha";
